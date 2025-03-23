@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTMX + FastAPI</title>
+  <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+</head>
+<body>
+  <h1>FastAPI with HTMX</h1>
+  <div hx-get="/api/health" hx-trigger="load" hx-target="#status" hx-swap="innerHTML">
+    <div id="status">Loading...</div>
+  </div>
+</body>
+</html>
